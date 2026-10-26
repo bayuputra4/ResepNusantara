@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ResepKu - MVC</title>
+    <title>ResepKu - Inspirasi Masakan Rumahan Indonesia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -74,10 +74,25 @@
                 
                 <?php foreach ($daftarResep as $resep): ?>
                     <article class="kartu-resep">
-                        <div class="kartu-emoji"><?php echo $resep->gambar; ?></div>
-                        <h3><?php echo $resep->judul; ?></h3>
-                        <p>⏱️ <?php echo $resep->estimasi; ?> | 🎯 <?php echo $resep->tingkat; ?></p>
-                        <a href="detail.php?id=<?php echo $resep->id; ?>" class="btn-detail">Lihat Resep →</a>
+                        <?php if (preg_match('/\.(jpg|jpeg|png|webp|gif|svg)$/i', $resep->gambar)): ?>
+                            <div class="kartu-gambar">
+                                <img src="<?php echo htmlspecialchars($resep->gambar); ?>" alt="<?php echo htmlspecialchars($resep->judul); ?>" loading="lazy">
+                                <span class="badge-kategori"><?php echo htmlspecialchars($resep->kategori); ?></span>
+                            </div>
+                        <?php else: ?>
+                            <div class="kartu-emoji"><?php echo $resep->gambar; ?></div>
+                        <?php endif; ?>
+                        
+                        <div class="kartu-body">
+                            <h3><?php echo htmlspecialchars($resep->judul); ?></h3>
+                            <div class="kartu-meta">
+                                <span>⏱️ <?php echo htmlspecialchars($resep->estimasi); ?></span>
+                                <span>🎯 <?php echo htmlspecialchars($resep->tingkat); ?></span>
+                                <span>🍽️ <?php echo htmlspecialchars($resep->porsi); ?></span>
+                            </div>
+                            <p class="kartu-bahan">🥕 <strong>Bahan:</strong> <?php echo htmlspecialchars(implode(', ', array_slice($resep->bahan, 0, 3))); ?>...</p>
+                            <a href="detail.php?id=<?php echo $resep->id; ?>" class="btn-detail" data-id="<?php echo $resep->id; ?>">Lihat Resep →</a>
+                        </div>
                     </article>
                 <?php endforeach; ?>
 
@@ -85,6 +100,20 @@
         </section>
 
     </main>
+
+    <!-- MODAL DETAIL -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">✕</button>
+            <div class="modal-gambar" id="modal-gambar"></div>
+            <h2 id="modal-judul">Judul Resep</h2>
+            <p id="modal-info">Estimasi | Tingkat</p>
+            <h3>🥕 Bahan-bahan:</h3>
+            <ul id="modal-bahan"></ul>
+            <h3>👨‍🍳 Cara Membuat:</h3>
+            <p id="modal-langkah"></p>
+        </div>
+    </div>
 
     <!-- FOOTER -->
     <footer id="tentang">

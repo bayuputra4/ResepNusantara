@@ -3,7 +3,7 @@
     {
       "id": 1,
       "judul": "Nasi Goreng Kampung",
-      "gambar": "🍛",
+      "gambar": "images/nasi-goreng-kampung.jpg",
       "kategori": "sarapan",
       "estimasi": "15 Menit",
       "tingkat": "Mudah",
@@ -23,7 +23,7 @@
     {
       "id": 2,
       "judul": "Mie Goreng Instan Ala Kos",
-      "gambar": "🍜",
+      "gambar": "images/mie-goreng.jpg",
       "kategori": "makan-siang",
       "estimasi": "10 Menit",
       "tingkat": "Mudah",
@@ -42,7 +42,7 @@
     {
       "id": 3,
       "judul": "Tumis Kangkung Terasi",
-      "gambar": "🥬",
+      "gambar": "images/tumis-kangkung-terasi.jpg",
       "kategori": "makan-siang",
       "estimasi": "10 Menit",
       "tingkat": "Mudah",
@@ -62,7 +62,7 @@
     {
       "id": 4,
       "judul": "Telur Dadar Krispi",
-      "gambar": "🍳",
+      "gambar": "images/telur-dadar-krispi.jpg",
       "kategori": "sarapan",
       "estimasi": "5 Menit",
       "tingkat": "Mudah",
@@ -81,7 +81,7 @@
     {
       "id": 5,
       "judul": "Tahu Tempe Bacem",
-      "gambar": "🍢",
+      "gambar": "images/tahu-tempe-bacem.jpg",
       "kategori": "makan-siang",
       "estimasi": "30 Menit",
       "tingkat": "Sedang",
@@ -103,7 +103,7 @@
     {
       "id": 6,
       "judul": "Sambal Goreng Kentang Ati",
-      "gambar": "🥔",
+      "gambar": "images/sambal-goreng-kentang.jpg",
       "kategori": "makan-siang",
       "estimasi": "25 Menit",
       "tingkat": "Sedang",
@@ -123,7 +123,7 @@
     {
       "id": 7,
       "judul": "Pisang Goreng Madu",
-      "gambar": "🍌",
+      "gambar": "images/pisang-goreng-madu.jpg",
       "kategori": "camilan",
       "estimasi": "15 Menit",
       "tingkat": "Mudah",
@@ -142,7 +142,7 @@
     {
       "id": 8,
       "judul": "Es Jeruk Peras",
-      "gambar": "🍹",
+      "gambar": "images/es-jeruk-peras.jpg",
       "kategori": "minuman",
       "estimasi": "5 Menit",
       "tingkat": "Mudah",
@@ -158,7 +158,7 @@
     {
       "id": 9,
       "judul": "Bubur Ayam Sederhana",
-      "gambar": "🍚",
+      "gambar": "images/bubur-ayam.jpg",
       "kategori": "sarapan",
       "estimasi": "40 Menit",
       "tingkat": "Sedang",
@@ -177,7 +177,7 @@
     {
       "id": 10,
       "judul": "Orek Tempe Kecap",
-      "gambar": "🍲",
+      "gambar": "images/orek-tempe-kecap.jpg",
       "kategori": "makan-siang",
       "estimasi": "15 Menit",
       "tingkat": "Mudah",
@@ -198,7 +198,7 @@
     {
       "id": 11,
       "judul": "Tumis Tauge Tahu",
-      "gambar": "🌱",
+      "gambar": "images/tumis-tauge-tahu.jpg",
       "kategori": "makan-siang",
       "estimasi": "10 Menit",
       "tingkat": "Mudah",
@@ -219,7 +219,7 @@
     {
       "id": 12,
       "judul": "Terong Balado",
-      "gambar": "🍆",
+      "gambar": "images/terong-balado.jpg",
       "kategori": "makan-siang",
       "estimasi": "20 Menit",
       "tingkat": "Sedang",
@@ -240,7 +240,7 @@
     {
       "id": 13,
       "judul": "Kangkung Saus Tiram",
-      "gambar": "🥬",
+      "gambar": "images/kangkung-saus-tiram.jpg",
       "kategori": "makan-siang",
       "estimasi": "10 Menit",
       "tingkat": "Mudah",
@@ -260,7 +260,7 @@
     {
       "id": 14,
       "judul": "Omelet Telur Mie",
-      "gambar": "🍳",
+      "gambar": "images/omelet-mie.jpg",
       "kategori": "sarapan",
       "estimasi": "10 Menit",
       "tingkat": "Mudah",
@@ -279,7 +279,7 @@
     {
       "id": 15,
       "judul": "Sayur Sop Sederhana",
-      "gambar": "🍲",
+      "gambar": "images/sayur-sop.jpg",
       "kategori": "makan-siang",
       "estimasi": "30 Menit",
       "tingkat": "Mudah",
@@ -302,7 +302,7 @@
     {
       "id": 16,
       "judul": "Sayur Bening Bayam",
-      "gambar": "🥣",
+      "gambar": "images/sayur-bening-bayam.jpg",
       "kategori": "makan-siang",
       "estimasi": "15 Menit",
       "tingkat": "Mudah",

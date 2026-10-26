@@ -76,14 +76,28 @@ function renderResep(data) {
     data.forEach(function(resep) {
         const bahanPreview = resep.bahan.slice(0, 3).join(", ");
 
+        const isImage = resep.gambar && /\.(jpg|jpeg|png|webp|gif|svg)$/i.test(resep.gambar);
+        const mediaHtml = isImage
+            ? `<div class="kartu-gambar">
+                 <img src="${resep.gambar}" alt="${resep.judul}" loading="lazy">
+                 <span class="badge-kategori">${resep.kategori}</span>
+               </div>`
+            : `<div class="kartu-emoji">${resep.gambar}</div>`;
+
         const kartu = document.createElement("article");
         kartu.className = "kartu-resep";
         kartu.innerHTML = `
-            <div class="kartu-emoji">${resep.gambar}</div>
-            <h3>${resep.judul}</h3>
-            <p>⏱️ ${resep.estimasi} | 🎯 ${resep.tingkat} | 🍽️ ${resep.porsi}</p>
-            <p>🥕 ${bahanPreview}...</p>
-            <a href="#" class="btn-detail" data-id="${resep.id}">Lihat Resep →</a>
+            ${mediaHtml}
+            <div class="kartu-body">
+                <h3>${resep.judul}</h3>
+                <div class="kartu-meta">
+                    <span>⏱️ ${resep.estimasi}</span>
+                    <span>🎯 ${resep.tingkat}</span>
+                    <span>🍽️ ${resep.porsi}</span>
+                </div>
+                <p class="kartu-bahan">🥕 <strong>Bahan:</strong> ${bahanPreview}...</p>
+                <a href="#" class="btn-detail" data-id="${resep.id}">Lihat Resep →</a>
+            </div>
         `;
         resepContainer.appendChild(kartu);
     });
@@ -163,7 +177,17 @@ function bukaModal(id) {
 
     if (!resep) return;
 
-    modalGambar.innerHTML = `<div class="modal-emoji">${resep.gambar}</div>`;
+    const isImage = resep.gambar && /\.(jpg|jpeg|png|webp|gif|svg)$/i.test(resep.gambar);
+    if (isImage) {
+        modalGambar.innerHTML = `
+            <div class="modal-gambar-wrap">
+                <img src="${resep.gambar}" alt="${resep.judul}">
+                <span class="badge-kategori">${resep.kategori}</span>
+            </div>
+        `;
+    } else {
+        modalGambar.innerHTML = `<div class="modal-emoji">${resep.gambar}</div>`;
+    }
     modalJudul.textContent = resep.judul;
     modalInfo.textContent = `⏱️ ${resep.estimasi} | 🎯 ${resep.tingkat} | 🍽️ ${resep.porsi}`;
 
