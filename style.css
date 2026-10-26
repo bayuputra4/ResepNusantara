@@ -1,0 +1,465 @@
+/* ============ RESET ============ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ============ LOGO ============ */
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 50px !important;
+    width: auto !important;
+    max-height: 50px;
+    display: block;
+}
+
+/* ============ HEADER ============ */
+header {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d97706;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #d97706;
+}
+
+/* ============ HERO ============ */
+#hero {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.2rem;
+    color: #78350f;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    color: #92400e;
+    margin-bottom: 1.5rem;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: 2px solid #fbbf24;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-box button {
+    padding: 0.8rem 1.5rem;
+    background-color: #d97706;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #b45309;
+}
+
+/* ============ KATEGORI ============ */
+#kategori {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#kategori h2, #resep-populer h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+
+.kategori-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.kategori-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kategori-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.kategori-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* ============ RESEP ============ */
+#resep-populer {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resep-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.kartu-resep {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    animation: slideUp 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.kartu-resep:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.kartu-resep h3 {
+    padding: 1rem 1rem 0.5rem;
+    color: #1f2937;
+}
+
+.kartu-resep p {
+    padding: 0 1rem;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.kartu-resep p:last-of-type {
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    color: #9ca3af;
+}
+
+.btn-detail {
+    display: inline-block;
+    margin: 0.5rem 1rem 1rem;
+    color: #d97706;
+    font-weight: bold;
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+.btn-detail:hover {
+    text-decoration: underline;
+}
+
+/* ============ EMOJI GAMBAR ============ */
+.kartu-emoji {
+    font-size: 5rem;
+    text-align: center;
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    padding: 1.5rem;
+    line-height: 1;
+}
+
+.modal-emoji {
+    font-size: 6rem;
+    text-align: center;
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    padding: 1.5rem;
+    border-radius: 12px;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+/* ============ FOOTER ============ */
+footer {
+    background-color: #1f2937;
+    color: #d1d5db;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.footer-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #fbbf24;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* ============ MODAL ============ */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #fee2e2;
+    color: #dc2626;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.modal-close:hover {
+    background: #fecaca;
+}
+
+.modal-content h2 {
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.modal-content h3 {
+    color: #d97706;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.modal-content ul {
+    padding-left: 1.5rem;
+    color: #4b5563;
+}
+
+.modal-content ul li {
+    margin-bottom: 0.3rem;
+}
+
+#modal-info {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+#modal-langkah {
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+/* ============ LOADING ============ */
+.loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fde68a;
+    border-top: 5px solid #d97706;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading p {
+    color: #92400e;
+    font-weight: 500;
+}
+
+/* ============ ERROR ============ */
+.error-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    background: #fef2f2;
+    border: 2px dashed #fca5a5;
+    border-radius: 12px;
+}
+
+.error-state .error-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.error-state h3 {
+    color: #dc2626;
+    margin-bottom: 0.5rem;
+}
+
+.error-state p {
+    color: #991b1b;
+    margin-bottom: 1rem;
+}
+
+.btn-retry {
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-retry:hover {
+    background-color: #b91c1c;
+}
+
+.no-result {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: #6b7280;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    nav.active {
+        max-height: 300px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding-top: 1rem;
+    }
+
+    nav ul li {
+        padding: 0.8rem 0;
+        border-bottom: 1px solid #f3f4f6;
+    }
+
+    .hero-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+}

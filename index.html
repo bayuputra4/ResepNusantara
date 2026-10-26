@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResepKu - Inspirasi Masakan Rumahan Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo-resepku.png" alt="ResepKu" class="logo-img" style="height: 60px; width: auto; max-height: 60px;">
+            </a>
+        </div>
+        
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+
+        <nav id="navbar">
+            <ul>
+                <li><a href="#hero">Beranda</a></li>
+                <li><a href="#kategori">Kategori</a></li>
+                <li><a href="#resep-populer">Daftar Resep</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        
+        <!-- HERO -->
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Masak Apa Hari Ini?</h2>
+                <p>Resep rumahan simpel untuk anak kos, ibu muda, dan pemula. Bahan gampang, ada di warung!</p>
+                
+                <form id="search-form" class="search-box">
+                    <input type="text" id="search-input" placeholder="Cari resep atau bahan (misal: telur, tempe, mie...)" name="search">
+                    <button type="submit" id="search-btn">Cari</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- KATEGORI -->
+        <section id="kategori">
+            <h2>Jelajahi Kategori</h2>
+            <div class="kategori-list" id="kategori-list">
+                <article class="kategori-card" data-kategori="sarapan">
+                    <span class="kategori-icon">🍳</span>
+                    <h3>Sarapan</h3>
+                </article>
+                <article class="kategori-card" data-kategori="makan-siang">
+                    <span class="kategori-icon">🍚</span>
+                    <h3>Makan Siang</h3>
+                </article>
+                <article class="kategori-card" data-kategori="camilan">
+                    <span class="kategori-icon">🍢</span>
+                    <h3>Camilan</h3>
+                </article>
+                <article class="kategori-card" data-kategori="minuman">
+                    <span class="kategori-icon">🥤</span>
+                    <h3>Minuman</h3>
+                </article>
+            </div>
+        </section>
+
+        <!-- DAFTAR RESEP -->
+        <section id="resep-populer">
+            <h2>Daftar Resep Rumahan</h2>
+            <div class="resep-list" id="resep-container">
+                <!-- Di-generate JavaScript -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MODAL DETAIL -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">✕</button>
+            <div class="modal-gambar" id="modal-gambar"></div>
+            <h2 id="modal-judul">Judul Resep</h2>
+            <p id="modal-info">Estimasi | Tingkat</p>
+            <h3>🥕 Bahan-bahan:</h3>
+            <ul id="modal-bahan"></ul>
+            <h3>👨‍🍳 Cara Membuat:</h3>
+            <p id="modal-langkah"></p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="tentang">
+        <p>&copy; 2024 ResepKu. Dibuat untuk tugas Web Programming.</p>
+        <div class="footer-links">
+            <a href="#">Kebijakan Privasi</a>
+            <a href="#">Syarat & Ketentuan</a>
+            <a href="#">Kontak</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

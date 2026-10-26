@@ -1,0 +1,323 @@
+{
+  "resep": [
+    {
+      "id": 1,
+      "judul": "Nasi Goreng Kampung",
+      "gambar": "🍛",
+      "kategori": "sarapan",
+      "estimasi": "15 Menit",
+      "tingkat": "Mudah",
+      "porsi": "1 piring",
+      "bahan": [
+        "1 piring nasi putih (sisa semalam lebih enak)",
+        "1 butir telur",
+        "2 siung bawang merah, iris",
+        "1 siung bawang putih, iris",
+        "3 buah cabai rawit (sesuai selera)",
+        "1 sdm kecap manis",
+        "1/2 sdt garam",
+        "Minyak untuk menumis"
+      ],
+      "langkah": "1. Panaskan minyak, tumis bawang merah, bawang putih, dan cabai hingga harum. 2. Masukkan telur, orak-arik hingga matang. 3. Masukkan nasi putih, aduk rata. 4. Tambahkan kecap manis dan garam, aduk hingga merata. 5. Masak sebentar, angkat, dan sajikan hangat."
+    },
+    {
+      "id": 2,
+      "judul": "Mie Goreng Instan Ala Kos",
+      "gambar": "🍜",
+      "kategori": "makan-siang",
+      "estimasi": "10 Menit",
+      "tingkat": "Mudah",
+      "porsi": "1 porsi",
+      "bahan": [
+        "1 bungkus mie instan (semua rasa)",
+        "1 butir telur",
+        "1 batang sawi hijau, potong",
+        "2 buah bakso sapi (opsional)",
+        "1 siung bawang putih, cincang",
+        "1 sdm kecap manis",
+        "Air secukupnya"
+      ],
+      "langkah": "1. Rebus mie instan hingga setengah matang, tiriskan. 2. Tumis bawang putih hingga harum. 3. Masukkan telur, orak-arik. 4. Tambahkan sawi dan bakso, tumis sebentar. 5. Masukkan mie, bumbu instan, dan kecap manis. 6. Aduk rata, masak sebentar, sajikan."
+    },
+    {
+      "id": 3,
+      "judul": "Tumis Kangkung Terasi",
+      "gambar": "🥬",
+      "kategori": "makan-siang",
+      "estimasi": "10 Menit",
+      "tingkat": "Mudah",
+      "porsi": "2 porsi",
+      "bahan": [
+        "1 ikat kangkung, siangi",
+        "3 siung bawang merah, iris",
+        "2 siung bawang putih, iris",
+        "1 sdt terasi bakar",
+        "3 buah cabai rawit",
+        "1 sdm saus tiram",
+        "Garam & gula secukupnya",
+        "Minyak untuk menumis"
+      ],
+      "langkah": "1. Panaskan minyak, tumis bawang merah, bawang putih, cabai, dan terasi hingga harum. 2. Masukkan kangkung, aduk cepat. 3. Tambahkan saus tiram, garam, dan gula. 4. Masak sebentar (jangan terlalu lama agar kangkung tetap hijau). 5. Angkat dan sajikan."
+    },
+    {
+      "id": 4,
+      "judul": "Telur Dadar Krispi",
+      "gambar": "🍳",
+      "kategori": "sarapan",
+      "estimasi": "5 Menit",
+      "tingkat": "Mudah",
+      "porsi": "1 porsi",
+      "bahan": [
+        "2 butir telur",
+        "2 sdm tepung terigu",
+        "2 sdm air",
+        "1 batang daun bawang, iris halus",
+        "1/2 sdt garam",
+        "1/4 sdt merica",
+        "Minyak untuk menggoreng"
+      ],
+      "langkah": "1. Kocok telur, tepung, dan air hingga rata. 2. Tambahkan daun bawang, garam, dan merica. 3. Panaskan minyak agak banyak. 4. Tuang adonan, goreng hingga kecoklatan di kedua sisi. 5. Angkat, tiriskan, sajikan."
+    },
+    {
+      "id": 5,
+      "judul": "Tahu Tempe Bacem",
+      "gambar": "🍢",
+      "kategori": "makan-siang",
+      "estimasi": "30 Menit",
+      "tingkat": "Sedang",
+      "porsi": "4 porsi",
+      "bahan": [
+        "5 potong tahu putih",
+        "5 potong tempe",
+        "3 siung bawang merah",
+        "2 siung bawang putih",
+        "1 sdt ketumbar",
+        "2 sdm gula merah",
+        "3 sdm kecap manis",
+        "1 lembar daun salam",
+        "Garam secukupnya",
+        "Air kelapa (opsional)"
+      ],
+      "langkah": "1. Haluskan bawang merah, bawang putih, dan ketumbar. 2. Campur dengan gula merah, kecap, daun salam, dan garam. 3. Masukkan tahu dan tempe, tambahkan air. 4. Ungkep hingga air menyusut dan bumbu meresap. 5. Goreng sebentar atau bakar, sajikan."
+    },
+    {
+      "id": 6,
+      "judul": "Sambal Goreng Kentang Ati",
+      "gambar": "🥔",
+      "kategori": "makan-siang",
+      "estimasi": "25 Menit",
+      "tingkat": "Sedang",
+      "porsi": "3 porsi",
+      "bahan": [
+        "3 buah kentang, potong dadu",
+        "3 buah ati ampela, rebus & potong",
+        "5 buah cabai merah",
+        "3 siung bawang merah",
+        "2 siung bawang putih",
+        "1 sdt gula merah",
+        "1 lembar daun salam",
+        "Garam secukupnya"
+      ],
+      "langkah": "1. Goreng kentang hingga matang, sisihkan. 2. Haluskan cabai, bawang, dan gula merah. 3. Tumis bumbu halus bersama daun salam hingga harum. 4. Masukkan ati ampela, aduk rata. 5. Tambahkan kentang goreng dan garam. 6. Aduk rata, masak sebentar, sajikan."
+    },
+    {
+      "id": 7,
+      "judul": "Pisang Goreng Madu",
+      "gambar": "🍌",
+      "kategori": "camilan",
+      "estimasi": "15 Menit",
+      "tingkat": "Mudah",
+      "porsi": "3 porsi",
+      "bahan": [
+        "5 buah pisang kepok",
+        "100 gram tepung terigu",
+        "2 sdm tepung beras",
+        "1 sdm madu",
+        "1 sdm gula pasir",
+        "Air secukupnya",
+        "Minyak untuk menggoreng"
+      ],
+      "langkah": "1. Campur tepung terigu, tepung beras, madu, gula, dan air hingga jadi adonan. 2. Celupkan pisang ke adonan. 3. Goreng dalam minyak panas hingga keemasan. 4. Tiriskan, sajikan hangat."
+    },
+    {
+      "id": 8,
+      "judul": "Es Jeruk Peras",
+      "gambar": "🍹",
+      "kategori": "minuman",
+      "estimasi": "5 Menit",
+      "tingkat": "Mudah",
+      "porsi": "1 gelas",
+      "bahan": [
+        "2 buah jeruk peras",
+        "2 sdm gula pasir",
+        "Es batu secukupnya",
+        "Air matang 200 ml"
+      ],
+      "langkah": "1. Peras jeruk, saring airnya. 2. Larutkan gula dengan sedikit air panas. 3. Campur air jeruk, larutan gula, dan air matang. 4. Tambahkan es batu. 5. Sajikan dingin."
+    },
+    {
+      "id": 9,
+      "judul": "Bubur Ayam Sederhana",
+      "gambar": "🍚",
+      "kategori": "sarapan",
+      "estimasi": "40 Menit",
+      "tingkat": "Sedang",
+      "porsi": "2 porsi",
+      "bahan": [
+        "1 cup beras",
+        "1 liter air",
+        "100 gram ayam fillet, rebus & suwir",
+        "1 batang daun bawang, iris",
+        "2 sdm kecap asin",
+        "Kerupuk & bawang goreng",
+        "Garam secukupnya"
+      ],
+      "langkah": "1. Masak beras dengan air sambil diaduk hingga menjadi bubur. 2. Tambahkan garam dan kecap asin. 3. Masak hingga tekstur lembut. 4. Sajikan dengan ayam suwir, daun bawang, bawang goreng, dan kerupuk."
+    },
+    {
+      "id": 10,
+      "judul": "Orek Tempe Kecap",
+      "gambar": "🍲",
+      "kategori": "makan-siang",
+      "estimasi": "15 Menit",
+      "tingkat": "Mudah",
+      "porsi": "3 porsi",
+      "bahan": [
+        "1 papan tempe, potong korek api",
+        "3 siung bawang merah, iris",
+        "2 siung bawang putih, iris",
+        "3 buah cabai merah, iris serong",
+        "2 sdm kecap manis",
+        "1 sdm saus tiram (opsional)",
+        "1/2 sdt garam",
+        "1 sdt gula pasir",
+        "Minyak untuk menumis"
+      ],
+      "langkah": "1. Goreng tempe hingga setengah kering, tiriskan. 2. Tumis bawang merah, bawang putih, dan cabai hingga harum. 3. Masukkan tempe, aduk rata. 4. Tambahkan kecap manis, saus tiram, garam, dan gula. 5. Aduk hingga bumbu meresap dan tempe berwarna kecoklatan. 6. Angkat dan sajikan."
+    },
+    {
+      "id": 11,
+      "judul": "Tumis Tauge Tahu",
+      "gambar": "🌱",
+      "kategori": "makan-siang",
+      "estimasi": "10 Menit",
+      "tingkat": "Mudah",
+      "porsi": "2 porsi",
+      "bahan": [
+        "100 gram tauge, cuci bersih",
+        "3 potong tahu putih, potong dadu",
+        "3 siung bawang merah, iris",
+        "2 siung bawang putih, iris",
+        "2 buah cabai rawit (opsional)",
+        "1 sdm saus tiram",
+        "1/2 sdt garam",
+        "1/2 sdt gula pasir",
+        "Minyak untuk menumis"
+      ],
+      "langkah": "1. Goreng tahu hingga berkulit, sisihkan. 2. Tumis bawang merah, bawang putih, dan cabai hingga harum. 3. Masukkan tauge, aduk cepat. 4. Tambahkan tahu, saus tiram, garam, dan gula. 5. Aduk rata, masak sebentar (jangan lama agar tauge tetap renyah). 6. Angkat dan sajikan."
+    },
+    {
+      "id": 12,
+      "judul": "Terong Balado",
+      "gambar": "🍆",
+      "kategori": "makan-siang",
+      "estimasi": "20 Menit",
+      "tingkat": "Sedang",
+      "porsi": "3 porsi",
+      "bahan": [
+        "3 buah terong ungu, potong sesuai selera",
+        "5 buah cabai merah keriting",
+        "3 buah cabai rawit (sesuai selera)",
+        "4 siung bawang merah",
+        "2 siung bawang putih",
+        "1 buah tomat",
+        "1 sdt gula merah",
+        "1/2 sdt garam",
+        "Minyak untuk menggoreng & menumis"
+      ],
+      "langkah": "1. Goreng terong hingga layu, tiriskan. 2. Haluskan cabai, bawang merah, bawang putih, tomat, dan gula merah. 3. Tumis bumbu halus hingga harum dan matang. 4. Tambahkan garam, aduk rata. 5. Masukkan terong goreng, aduk pelan agar tidak hancur. 6. Masak sebentar, angkat, dan sajikan."
+    },
+    {
+      "id": 13,
+      "judul": "Kangkung Saus Tiram",
+      "gambar": "🥬",
+      "kategori": "makan-siang",
+      "estimasi": "10 Menit",
+      "tingkat": "Mudah",
+      "porsi": "2 porsi",
+      "bahan": [
+        "1 ikat kangkung, siangi",
+        "3 siung bawang putih, cincang",
+        "2 sdm saus tiram",
+        "1 sdt kecap manis",
+        "1/2 sdt garam",
+        "1/2 sdt gula pasir",
+        "Sedikit air",
+        "Minyak untuk menumis"
+      ],
+      "langkah": "1. Panaskan minyak, tumis bawang putih hingga harum. 2. Masukkan kangkung, aduk cepat. 3. Tambahkan saus tiram, kecap manis, garam, dan gula. 4. Beri sedikit air, aduk rata. 5. Masak sebentar (jangan terlalu lama agar kangkung tetap hijau dan renyah). 6. Angkat dan sajikan."
+    },
+    {
+      "id": 14,
+      "judul": "Omelet Telur Mie",
+      "gambar": "🍳",
+      "kategori": "sarapan",
+      "estimasi": "10 Menit",
+      "tingkat": "Mudah",
+      "porsi": "1 porsi",
+      "bahan": [
+        "1 bungkus mie instan, rebus & tiriskan",
+        "2 butir telur",
+        "1 batang daun bawang, iris halus",
+        "1 siung bawang putih, cincang",
+        "1/2 sdt garam",
+        "1/4 sdt merica",
+        "Minyak untuk menggoreng"
+      ],
+      "langkah": "1. Kocok telur, tambahkan garam dan merica. 2. Campur mie rebus, daun bawang, dan bawang putih ke dalam kocokan telur. 3. Panaskan minyak di teflon. 4. Tuang adonan, ratakan. 5. Masak hingga kecoklatan di kedua sisi. 6. Angkat, potong, dan sajikan."
+    },
+    {
+      "id": 15,
+      "judul": "Sayur Sop Sederhana",
+      "gambar": "🍲",
+      "kategori": "makan-siang",
+      "estimasi": "30 Menit",
+      "tingkat": "Mudah",
+      "porsi": "3 porsi",
+      "bahan": [
+        "2 buah wortel, potong bulat",
+        "2 buah kentang, potong dadu",
+        "5 buah buncis, potong",
+        "1/4 buah kol, potong",
+        "1 batang seledri, ikat",
+        "2 siung bawang putih, cincang",
+        "1/2 sdt merica bubuk",
+        "1 sdt garam",
+        "1 sdt gula pasir",
+        "1 liter air",
+        "Bawang goreng untuk taburan"
+      ],
+      "langkah": "1. Didihkan air, masukkan bawang putih dan merica. 2. Masukkan wortel dan kentang, masak hingga setengah matang. 3. Tambahkan buncis dan kol. 4. Masukkan garam, gula, dan seledri. 5. Masak hingga semua sayur matang. 6. Sajikan dengan taburan bawang goreng."
+    },
+    {
+      "id": 16,
+      "judul": "Sayur Bening Bayam",
+      "gambar": "🥣",
+      "kategori": "makan-siang",
+      "estimasi": "15 Menit",
+      "tingkat": "Mudah",
+      "porsi": "2 porsi",
+      "bahan": [
+        "1 ikat bayam, siangi",
+        "1 buah jagung manis, potong",
+        "2 siung bawang merah, iris",
+        "1 siung bawang putih, iris",
+        "1 ruas temu kunci (opsional)",
+        "1 sdt garam",
+        "1/2 sdt gula pasir",
+        "750 ml air"
+      ],
+      "langkah": "1. Didihkan air, masukkan bawang merah, bawang putih, dan temu kunci. 2. Masukkan jagung, masak hingga setengah matang. 3. Tambahkan bayam, garam, dan gula. 4. Masak sebentar saja (bayam cepat matang). 5. Angkat dan sajikan hangat."
+    }
+  ]
+}
