@@ -1,0 +1,46 @@
+html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResepKu - Week 2 (HTML & CSS)</title>
+    <style>
+        /* Contoh CSS Sederhana (Week 2) */
+        body { font-family: sans-serif; background-color: #fafafa; margin: 0; }
+        header { background: white; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; justify-content: space-between; }
+        #hero { background: #fde68a; padding: 50px; text-align: center; }
+        .resep-list { display: flex; gap: 20px; padding: 20px; }
+        .kartu-resep { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+    <!-- HTML Semantik -->
+    <header>
+        <div class="logo">🍳 ResepKu</div>
+        <nav>Beranda | Kategori | Tentang</nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Masak Apa Hari Ini?</h2>
+            <p>Resep rumahan simpel untuk pemula.</p>
+        </section>
+
+        <section id="daftar-resep">
+            <div class="resep-list">
+                <article class="kartu-resep">
+                    <h3>Nasi Goreng</h3>
+                    <p>15 Menit | Mudah</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 20px;">
+        <p>&copy; 2024 ResepKu</p>
+    </footer>
+
+</body>
+</html>
