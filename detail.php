@@ -26,7 +26,7 @@ if (!$resepDipilih) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $resepDipilih['judul']; ?> - ResepKu</title>
+    <title><?php echo htmlspecialchars($resepDipilih['judul']); ?> - ResepKu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,45 +34,62 @@ if (!$resepDipilih) {
     <header>
         <div class="logo">
             <a href="index.php">
-                <img src="images/logo-resepku.png" alt="ResepKu" class="logo-img" style="height: 50px; width: auto; max-height: 50px;">
+                <img src="images/logo-resepku.png" alt="ResepKu" class="logo-img" style="height: 52px; width: auto; max-height: 52px;">
             </a>
         </div>
         <nav>
             <ul>
-                <li><a href="index.php">← Kembali</a></li>
+                <li><a href="index.php">← Kembali ke Beranda</a></li>
             </ul>
         </nav>
     </header>
 
-    <main style="max-width: 800px; margin: 2rem auto; padding: 0 2rem;">
-        <article style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <main class="detail-main">
+        <article class="detail-card">
             
-            <div class="modal-emoji" style="font-size: 8rem; text-align: center; background: linear-gradient(135deg, #fef3c7, #fde68a); padding: 2rem; border-radius: 12px; margin-bottom: 1.5rem;">
-                <?php echo $resepDipilih['gambar']; ?>
+            <?php if (preg_match('/\.(jpg|jpeg|png|webp|gif|svg)$/i', $resepDipilih['gambar'])): ?>
+                <div class="detail-gambar-wrap">
+                    <img src="<?php echo htmlspecialchars($resepDipilih['gambar']); ?>" alt="<?php echo htmlspecialchars($resepDipilih['judul']); ?>" class="detail-img">
+                    <span class="badge-kategori" style="position: absolute; top: 18px; left: 18px;"><?php echo htmlspecialchars($resepDipilih['kategori']); ?></span>
+                </div>
+            <?php else: ?>
+                <div class="modal-emoji" style="font-size: 6rem; text-align: center; background: linear-gradient(135deg, #fff7ed, #fed7aa); padding: 2rem; border-radius: 18px; margin-bottom: 1.5rem;">
+                    <?php echo $resepDipilih['gambar']; ?>
+                </div>
+            <?php endif; ?>
+
+            <h1 class="detail-title"><?php echo htmlspecialchars($resepDipilih['judul']); ?></h1>
+            <div class="detail-meta">
+                <span class="detail-meta-item">⏱️ <?php echo htmlspecialchars($resepDipilih['estimasi']); ?></span>
+                <span class="detail-meta-item">🎯 <?php echo htmlspecialchars($resepDipilih['tingkat']); ?></span>
+                <span class="detail-meta-item">🍽️ <?php echo htmlspecialchars($resepDipilih['porsi']); ?></span>
             </div>
 
-            <h1 style="color: #1f2937; margin-bottom: 0.5rem;"><?php echo $resepDipilih['judul']; ?></h1>
-            <p style="color: #6b7280; margin-bottom: 1.5rem;">
-                ⏱️ <?php echo $resepDipilih['estimasi']; ?> | 
-                🎯 <?php echo $resepDipilih['tingkat']; ?> | 
-                🍽️ <?php echo $resepDipilih['porsi']; ?>
-            </p>
-
-            <h3 style="color: #d97706; margin-bottom: 0.5rem;">🥕 Bahan-bahan:</h3>
-            <ul style="padding-left: 1.5rem; color: #4b5563; margin-bottom: 1.5rem;">
+            <h3 class="detail-section-title">🥕 Bahan-bahan:</h3>
+            <ul class="detail-ingredients">
                 <?php foreach ($resepDipilih['bahan'] as $b): ?>
-                    <li><?php echo $b; ?></li>
+                    <li><?php echo htmlspecialchars($b); ?></li>
                 <?php endforeach; ?>
             </ul>
 
-            <h3 style="color: #d97706; margin-bottom: 0.5rem;">👨‍🍳 Cara Membuat:</h3>
-            <p style="color: #4b5563; line-height: 1.7;"><?php echo $resepDipilih['langkah']; ?></p>
+            <h3 class="detail-section-title">👨‍🍳 Cara Membuat:</h3>
+            <div class="detail-steps">
+                <?php 
+                    $langkahFormatted = str_replace('. ', ".<br><br>", htmlspecialchars($resepDipilih['langkah']));
+                    echo $langkahFormatted;
+                ?>
+            </div>
 
         </article>
     </main>
 
     <footer>
         <p>&copy; 2024 ResepKu. Dibuat untuk tugas Web Programming.</p>
+        <div class="footer-links">
+            <a href="#">Kebijakan Privasi</a>
+            <a href="#">Syarat & Ketentuan</a>
+            <a href="#">Kontak</a>
+        </div>
     </footer>
 
 </body>
