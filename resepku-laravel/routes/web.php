@@ -8,4 +8,4 @@ Route::get('/', function () {
 
 use App\Http\Controllers\ResepController;
 
-Route::get('/resep', [ResepController::class, 'index']);
+Route::resource('resep', ResepController::class);
